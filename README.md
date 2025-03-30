@@ -1,16 +1,29 @@
 This was a simple api I built using python and flask. I used it for learning with my data requested from indeed. There is sample data in the json.
 
-Setup is:
+Steps to make it work.
+After setup and activating a virtual environment...
+1. `pip install flask`
+2. `pip install jsonify`
+3. Create python file and paste above python code
+4. Create json file and paste above json code
+5. Run python script
 
-* Install Python
-* Setup venv
-* source venv
-* run job_api.py
-
-From there you can send a curl request to 
 ```
-http://127.0.0.1:8080/api/jobs
-http://127.0.0.1:8080/api/jobs/titles
-http://127.0.0.1:8080/api/jobs/companies
-http://127.0.0.1:8080/api/jobs/locations
+sudo python3 job_api.py
+```
+
+6. Use curl to test
+
+```
+curl http://127.0.0.1:8080/api/jobs
+```
+```
+[
+    {
+        "company": "CoolCompany",
+        "date": "date timestamp",
+        "location": "Cool City, COOL",
+        "title": "Job Title"
+    }
+]
 ```
