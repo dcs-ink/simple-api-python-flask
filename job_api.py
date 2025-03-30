@@ -36,12 +36,6 @@ def get_job_locations():
     locations = list(set(job.get('location') for job in jobs_data))
     return jsonify(locations)
 
-@app.route('/api/jobs/content', methods=['GET'])
-def get_job_content():
-    if not jobs_data:
-        return jsonify({"error": "No job data available"}), 500
-    urls = list(set(job.get('content', 'N/A') for job in jobs_data))
-    return jsonify(urls)
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
