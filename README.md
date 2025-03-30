@@ -1,3 +1,5 @@
+https://dev.to/dcs_ink/create-a-simple-api-with-python-and-flask-2b80
+
 This was a simple api I built using python and flask. I used it for learning with my data requested from indeed. There is sample data in the json.
 
 Steps to make it work.
